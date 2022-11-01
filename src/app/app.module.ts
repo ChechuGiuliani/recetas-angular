@@ -4,25 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
-import {MatButtonModule} from '@angular/material/button'; 
-import {MatIconModule} from '@angular/material/icon'; 
-import {MatCardModule} from '@angular/material/card';
-import {MatSidenavModule} from '@angular/material/sidenav'; 
+
+import { CardComponent } from './shared/components/card/card.component'; 
+import { MaterialModule } from './shared/modules/material/material.module';
+
+ 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardComponent
   ],
   imports: [
-    
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatCardModule,
-    MatSidenavModule,
+    MaterialModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
