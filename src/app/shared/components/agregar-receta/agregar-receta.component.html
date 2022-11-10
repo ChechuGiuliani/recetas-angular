@@ -1,7 +1,11 @@
 
 <form [formGroup]="formulario" (ngSubmit)="onSubmit()"  >
-    <input type="text" formControlName="titulo">
-    <input type="text" formControlName="imagen">
-    <input type="text" formControlName="descripcion">
-    <button type="submit">Agregar</button>
+  
+  <label>titulo</label><br>
+    <input type="text" formControlName="titulo"> <br>
+    <label>imagen</label><br>
+    <input type="text" formControlName="imagen"><br>
+    <label>descripcion</label><br>
+    <input type="text" formControlName="descripcion"><br>
+    <button type="submit">Agregar</button><br>
   </form>

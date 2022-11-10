@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardComponent {
 @Input() title: string;
 @Input() subtitle: string;
-@Input() imageSource: string;
+@Input() imagen: string;
 @Input() description: string;
 
 }

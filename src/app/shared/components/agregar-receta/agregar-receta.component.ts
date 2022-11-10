@@ -27,8 +27,11 @@ export class AgregarRecetaComponent implements OnInit {
   console.log(this.recetaService.get())
   }
   onSubmit (){
-    console.log(this.formulario);
-    
+    this.recetaService.add({
+      id: "3",
+      title: this.formulario.get('titulo')?.value,
+      imagen: this.formulario.get("imagen")?.value,
+      descripcion: this.formulario.get ("descripcion")?.value,
+    })
   }
-
 }

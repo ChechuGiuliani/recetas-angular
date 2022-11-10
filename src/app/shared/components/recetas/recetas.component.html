@@ -5,10 +5,10 @@
       <p>Tortas</p>
     </mat-drawer>
     
-    <app-card title="Torta de Chocolate" subtitle="Receta de torta de choco" imageSource="assets/tortadechocol.jpeg" description="chocolate, harina, huevos"></app-card>
+    <app-card *ngFor="let receta of recetasList" [title]="receta.title" [imagen]="receta.imagen" [description]="receta.descripcion"></app-card>
 
    <div class="example-button-container">
-    <button routerLink="/recetas/Agregar" mat-mini-fab color="primary" aria-label="Example icon button with a plus one icon">
+    <button routerLink="/recetas/agregar" mat-mini-fab color="primary" aria-label="Example icon button with a plus one icon">
       <mat-icon>plus_one</mat-icon>
     
     </button> </div>
