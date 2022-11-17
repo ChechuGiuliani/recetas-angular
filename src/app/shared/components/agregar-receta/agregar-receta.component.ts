@@ -32,6 +32,7 @@ export class AgregarRecetaComponent implements OnInit {
       title: this.formulario.get('titulo')?.value,
       imagen: this.formulario.get("imagen")?.value,
       descripcion: this.formulario.get ("descripcion")?.value,
+      like: false
     })
   }
 }

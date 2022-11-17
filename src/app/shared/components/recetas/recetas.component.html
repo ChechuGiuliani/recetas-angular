@@ -5,7 +5,7 @@
       <p>Tortas</p>
     </mat-drawer>
     
-    <app-card *ngFor="let receta of recetasList" [title]="receta.title" [imagen]="receta.imagen" [description]="receta.descripcion"></app-card>
+    <app-card *ngFor="let receta of recetasList" [title]="receta.title" [imagen]="receta.imagen" [description]="receta.descripcion" [fav]="receta.like" [id]="receta.id"></app-card>
 
    <div class="example-button-container">
     <button routerLink="/recetas/agregar" mat-mini-fab color="primary" aria-label="Example icon button with a plus one icon">
